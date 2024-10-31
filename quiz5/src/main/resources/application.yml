@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: quiz5
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ilerijava
+    username: postgres
+    password: 123
+  flyway:
+    enabled: true
+    locations: classpath:DB/Migrations
+    baseline-on-migrate: true
